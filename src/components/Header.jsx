@@ -1,5 +1,5 @@
 import React from "react";
-import imgProfile from "./imgProfile.png";
+import imgProfile from "../assets/imgProfile.png";
 import { Hero, HeroContent, HeroImage, BtnPrimary } from "./StyledComponents";
 
 export default function Header() {
