@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
+//NAV
 export const StyledNav = styled.nav`
   margin: 1rem auto;
   width: clamp(5rem, 80vw, 800px);
   display: flex;
   justify-content: flex-end;
 `;
-
 export const StyledNavLink = styled.button`
   border: none;
   background-color: transparent;
@@ -22,6 +22,7 @@ export const StyledNavLink = styled.button`
   }
 `;
 
+//HERO
 export const Hero = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -30,21 +31,18 @@ export const Hero = styled.div`
   justify-content: center;
   padding: 5rem 1rem;
 `;
-
 export const HeroImage = styled.img`
   height: 13rem;
   background-color: var(--dark);
   width: auto;
   border-radius: 100%;
 `;
-
 export const HeroContent = styled.div`
   width: clamp(5rem, 90vw, 20rem);
   display: flex;
   flex-direction: column;
   gap: 1rem;
 `;
-
 export const BtnPrimary = styled.button`
   background-color: var(--primary);
   color: white;
@@ -59,10 +57,10 @@ export const BtnPrimary = styled.button`
   }
 `;
 
+//MY WORK
 export const Secction = styled.div`
   background-color: var(--white);
 `;
-
 export const SecctionWork = styled.div`
   margin: auto;
   width: clamp(5rem, 80vw, 800px);
@@ -79,7 +77,6 @@ export const SecctionWork = styled.div`
     justify-content: center;
   }
 `;
-
 export const Technology = styled.span`
   color: white;
   background-color: var(--secondary);
@@ -89,6 +86,7 @@ export const Technology = styled.span`
   margin: 0.5rem;
 `;
 
+//PROJECTS
 export const StyledProjects = styled.div`
   display: flex;
   flex-direction: column;
@@ -117,5 +115,31 @@ export const Line = styled.span`
   width: clamp(5rem, 80vw, 800px);
   height: 2px;
   background-color: var(--white);
-  filter: opacity(.5);
+  filter: opacity(0.5);
+`;
+
+//FOOTER
+export const StyledFooter = styled.footer`
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  .contact {
+    width: 9em;
+    display: flex;
+    justify-content: space-between;
+    svg {
+      color: var(--dark);
+      height: 2rem;
+      width: auto;
+    }
+  }
+  p {
+    color: var(--dark);
+    width: 12em;
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+  }
 `;
