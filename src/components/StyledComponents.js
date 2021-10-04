@@ -101,11 +101,45 @@ export const StyledProject = styled.div`
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  img {
-    max-width: 15rem;
-    height: 100%;
-    width: auto;
-    border-radius: 0.5rem;
+  .image-links {
+    position: relative;
+    img {
+      max-width: 15rem;
+      height: 11.3rem;
+      width: auto;
+      border-radius: 0.5rem;
+    }
+    .links {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      max-width: 15rem;
+      height: 11.3rem;
+      border-radius: 0.5rem;
+      backdrop-filter: blur(0px);
+      filter: opacity(00%);
+      transition: backdrop-filter 0.1s ease-in-out, filter 0.1s ease;
+      &:hover {
+        filter: opacity(100%);
+        backdrop-filter: blur(5px);
+      }
+      a {
+        text-decoration: none;
+        color: var(--white);
+        background-color: var(--dark);
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        &:hover {
+          background-color: var(--primary);
+        }
+      }
+    }
   }
   .content {
     width: clamp(5rem, 60vw, 25rem);
@@ -133,12 +167,15 @@ export const StyledFooter = styled.footer`
       color: var(--dark);
       height: 2rem;
       width: auto;
+      &:hover {
+        color: var(--secondary);
+      }
     }
   }
   p {
     color: var(--dark);
     width: 12em;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 500;
     text-align: center;
   }

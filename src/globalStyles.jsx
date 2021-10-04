@@ -16,8 +16,10 @@ export default createGlobalStyle`
     --secondary: #6622CC;
     --dark: #212121;
     --light: #C3D2D5;
+    --white: #EDF7FA;
   }
-  html { 
+  body { 
     font-family: 'Heebo';
+    background-color: var(--light);
   }
 `;
