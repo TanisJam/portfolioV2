@@ -18,7 +18,7 @@ export default function Work() {
     "Webpack",
   ];
   return (
-    <Secction>
+    <Secction id="work">
       <SecctionWork>
         <h3>My work</h3>
         <p>

@@ -3,17 +3,23 @@
     {
       "title": "Trivia",
       "description": "As part of the Evuca project we were assigned the task of creating a website in which to apply the knowledge acquired so far. This results in a strengthen our use of HTML, CSS, and JavaScript. We use Webpack, Git and Less on this proyect. It is a simple trivia game with achievements.",
-      "imgName": "trivia.png"
+      "imgName": "trivia.png",
+      "live": "https://trivia15dias.vercel.app/",
+      "source": "https://github.com/TanisJam/trivia15dias"
     },
     {
-      "title": "Weather App",
+      "title": "Its Raining",
       "description": "React based weather seeker. It consumes a free openweathermap API. I used CreateReactApp, React Router and Styled Components.",
-      "imgName": "weather.png"
+      "imgName": "weather.png",
+      "live": "https://its-raining.vercel.app/",
+      "source": "https://github.com/TanisJam/its-raining"
     },
     {
       "title": "ETCH-A-SKETCH",
       "description": "ETCH-A-SKETCH game with some extra functionalities. Currently just works on desktop.",
-      "imgName": "EtchASketch.png"
+      "imgName": "EtchASketch.png",
+      "live": "https://tanisjam.github.io/etch-a-sketch/",
+      "source": "https://github.com/TanisJam/etch-a-sketch"
     }
   ]
 }

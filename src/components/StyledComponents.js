@@ -7,7 +7,8 @@ export const StyledNav = styled.nav`
   display: flex;
   justify-content: flex-end;
 `;
-export const StyledNavLink = styled.button`
+export const StyledNavLink = styled.a`
+  text-decoration: none;
   border: none;
   background-color: transparent;
   font-weight: 800;
@@ -20,6 +21,23 @@ export const StyledNavLink = styled.button`
     text-decoration: underline var(--primary) 3px;
     text-underline-offset: 0.2rem;
   }
+`;
+
+//MODAL
+export const Modal = styled.div`
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333;
+  width: clamp(5rem, 80vw, 800px);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 //HERO
@@ -43,12 +61,13 @@ export const HeroContent = styled.div`
   flex-direction: column;
   gap: 1rem;
 `;
-export const BtnPrimary = styled.button`
+export const BtnPrimary = styled.a`
+  text-decoration: none;
   background-color: var(--primary);
   color: white;
   font-weight: 800;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1.2rem;
   margin-right: auto;
   border: none;
   &:hover {
@@ -128,6 +147,9 @@ export const StyledProject = styled.div`
       &:hover {
         filter: opacity(100%);
         backdrop-filter: blur(5px);
+        a {
+          display: flex;
+        }
       }
       a {
         text-decoration: none;
@@ -135,10 +157,13 @@ export const StyledProject = styled.div`
         background-color: var(--dark);
         padding: 0.5rem 1rem;
         border-radius: 2rem;
+        display: none;
         &:hover {
           background-color: var(--primary);
         }
       }
+    }
+    .disabled {
     }
   }
   .content {

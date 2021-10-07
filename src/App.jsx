@@ -1,4 +1,5 @@
 import GlobalStyles from "./globalStyles";
+import Contact from "./components/Contact";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Work from "./components/Work";
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
+      <Contact />
       <Nav />
       <Header />
       <Work />

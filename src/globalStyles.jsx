@@ -19,6 +19,7 @@ export default createGlobalStyle`
     --white: #EDF7FA;
   }
   body { 
+    position: relative;
     font-family: 'Heebo';
     background-color: var(--light);
   }
