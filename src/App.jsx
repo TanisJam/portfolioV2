@@ -1,3 +1,4 @@
+import React from "react";
 import GlobalStyles from "./globalStyles";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";

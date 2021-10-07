@@ -25,19 +25,57 @@ export const StyledNavLink = styled.a`
 
 //MODAL
 export const Modal = styled.div`
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  top: 4rem;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #333;
-  width: clamp(5rem, 80vw, 800px);
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+  background-color: var(--white);
+  max-width: min(90%, 40rem);
+  height: 80vh;
+  max-height: 25rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
+  form {
+    width: min(100%, 20rem);
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    .form-group {
+      width: 100%;
+    }
+    input,
+    button,
+    textarea {
+      padding: 0.8rem;
+      border: none;
+      width: 100%;
+      box-shadow: 0px 0px 2px 1px rgb(255, 100, 100, 0.2);
+    }
+    textarea {
+      resize: vertical;
+      height: 4rem;
+    }
+    button {
+      background-color: var(--primary);
+      color: white;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 0.5rem 1.2rem;
+      margin-right: auto;
+      border: none;
+      &:hover {
+        cursor: pointer;
+        filter: saturate(2);
+      }
+    }
+  }
 `;
 
 //HERO
