@@ -15,6 +15,13 @@
       "source": "https://github.com/TanisJam/its-raining"
     },
     {
+      "title": "Temperature and Humidity Simulator",
+      "description": "Scienceless simulation of how temperature and humidity affect to bunch of a computer generated slimes. My frist thougths for this project was practice with Objects and Classes, but I also learned about physics and how to manipulate css variables.",
+      "imgName": "temp.png",
+      "live": "https://tanisjam.github.io/cold-humidity-sim/",
+      "source": "https://github.com/TanisJam/cold-humidity-sim"
+    },
+    {
       "title": "ETCH-A-SKETCH",
       "description": "ETCH-A-SKETCH game with some extra functionalities. Currently just works on desktop.",
       "imgName": "EtchASketch.png",

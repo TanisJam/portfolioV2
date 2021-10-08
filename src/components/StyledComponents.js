@@ -47,6 +47,7 @@ export const Modal = styled.div`
   max-height: 25rem;
   border-radius: 0.5rem;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
+  //CONTACT
   form {
     padding: 1rem 0.5rem;
     width: min(100%, 20rem);
@@ -56,7 +57,7 @@ export const Modal = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: min(2rem, 2vh);
+    gap: min(2.5rem, 2vh);
     .form-group {
       width: 100%;
     }
@@ -77,7 +78,7 @@ export const Modal = styled.div`
     }
     textarea {
       resize: none;
-      height: 4rem;
+      height: 3.5rem;
     }
     button {
       background-color: var(--primary);
@@ -92,6 +93,10 @@ export const Modal = styled.div`
         cursor: pointer;
         filter: saturate(2);
       }
+    }
+    .error {
+      color: red;
+      font-size: 0.8rem;
     }
   }
 `;
