@@ -22,7 +22,16 @@ export const StyledNavLink = styled.a`
     text-underline-offset: 0.2rem;
   }
 `;
-
+//OVERLAY
+export const Overrlay = styled.div`
+  z-index: 50;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+`;
 //MODAL
 export const Modal = styled.div`
   position: fixed;
@@ -31,14 +40,15 @@ export const Modal = styled.div`
   top: 0;
   bottom: 0;
   margin: auto;
-  z-index: 100;
+  z-index: 200;
   background-color: var(--white);
   max-width: min(90%, 40rem);
-  height: 80vh;
+  height: fit-content;
   max-height: 25rem;
   border-radius: 0.5rem;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
   form {
+    padding: 1rem 0.5rem;
     width: min(100%, 20rem);
     height: 100%;
     margin: auto;
@@ -46,7 +56,7 @@ export const Modal = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: min(2rem, 2vh);
     .form-group {
       width: 100%;
     }
@@ -57,9 +67,16 @@ export const Modal = styled.div`
       border: none;
       width: 100%;
       box-shadow: 0px 0px 2px 1px rgb(255, 100, 100, 0.2);
+      &:hover {
+        box-shadow: 0px 0px 4px 2px rgb(200, 200, 200, 0.5);
+      }
+      &:focus {
+        outline: none;
+        box-shadow: 0px 0px 1px 1px rgb(55, 55, 55, 0.5);
+      }
     }
     textarea {
-      resize: vertical;
+      resize: none;
       height: 4rem;
     }
     button {
@@ -71,6 +88,7 @@ export const Modal = styled.div`
       margin-right: auto;
       border: none;
       &:hover {
+        box-shadow: none;
         cursor: pointer;
         filter: saturate(2);
       }
@@ -98,6 +116,34 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  @keyframes bg-move {
+    0% {
+      background-position: 500% 0;
+    }
+    50% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 500% 0;
+    }
+  }
+  .name {
+    background-image: linear-gradient(
+      60deg,
+      rgba(33, 33, 33, 1) 0%,
+      rgba(255, 100, 100, 1) 25%,
+      rgba(102, 34, 204, 1) 75%,
+      rgba(33, 33, 33, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 500% auto;
+    background-position: 0 100%;
+  }
+  .name:hover {
+    -webkit-text-fill-color: transparent;
+    animation: bg-move 10s ease-in-out infinite;
+  }
 `;
 export const BtnPrimary = styled.a`
   text-decoration: none;

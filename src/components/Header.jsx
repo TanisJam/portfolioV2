@@ -8,11 +8,13 @@ export default function Header() {
       <Hero>
         <HeroImage src={imgProfile} />
         <HeroContent>
-          <h1>Hi, I am Mauricio, Front-end Developer</h1>
+          <h1>
+            Hi, I am <span className="name">Mauricio</span>, Front-end Developer
+          </h1>
           <p>
             Passionate by technology I enjoy to be a self taught. Learning new
-            things to keep improving my solutions is a part of my routine.
-            Probably my taste for video games guided me to that.
+            things to keep improving is a powerful engine. This is applicable
+            for everything, but it is what I like the most about the IT world.
           </p>
           <BtnPrimary href="/resume/CV_ Mauricio_Romero.pdf" download>
             Download Resume

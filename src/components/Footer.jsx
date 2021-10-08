@@ -8,13 +8,13 @@ export default function Footer() {
   return (
     <StyledFooter>
       <div className="contact">
-        <a href="https://github.com/TanisJam" target="_blank" rel="noreferrer">
+        <a href="https://github.com/TanisJam" target="_blank" rel="noopener noreferrer">
           <GitHubLogo />
         </a>
-        <a href="mailto:mauricionromero@hotmail.com" target="_blank" rel="noreferrer">
+        <a href="mailto:mauricionromero@hotmail.com" target="_blank" rel="noopener noreferrer">
           <EmailLogo />
         </a>
-        <a href="http://linkedin.com/in/mauricionromero" target="_blank" rel="noreferrer">
+        <a href="http://linkedin.com/in/mauricionromero" target="_blank" rel="noopener noreferrer">
           <LinkedInLogo />
         </a>
       </div>

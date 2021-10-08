@@ -8,10 +8,10 @@ export default function Project({ project }) {
         <div className="image-links">
           <img src={`./assets/${project.imgName}`} alt="imagen" />
           <div className={"links"}>
-            <a href={project.live} target="_blank" rel="noreferrer">
+            <a href={project.live} target="_blank" rel="noopener noreferrer">
               Live
             </a>
-            <a href={project.source} target="_blank" rel="noreferrer">
+            <a href={project.source} target="_blank" rel="noopener noreferrer">
               Source
             </a>
           </div>
