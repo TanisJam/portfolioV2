@@ -29,6 +29,13 @@
       "source": "https://github.com/TanisJam/hero-page-nft"
     },
     {
+      "title": "SuperMarket",
+      "description": "This is a simple e-commerce app. You can add products to your cart, and checkout. It uses React, Redux Bootstrap and firebase as database.",
+      "imgName": "super.png",
+      "live": "https://super-evuca.vercel.app/",
+      "source": "https://github.com/TanisJam/superCualquiera"
+    },
+    {
       "title": "Its Raining",
       "description": "React based weather seeker. It consumes a free openweathermap API. I used CreateReactApp, React Router and Styled Components.",
       "imgName": "weather.png",
