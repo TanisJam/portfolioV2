@@ -1,11 +1,32 @@
 {
   "projects": [
     {
+      "title": "Superhero Team Inspector",
+      "description": "This app that lets you create a fake superheroes team to easely see their combined powerstats. Credentials to access: Email: challenge@alkemy.org Password: react.",
+      "imgName": "sti.png",
+      "live": "https://sti.vercel.app/",
+      "source": "https://github.com/TanisJam/sti"
+    },
+    {
+      "title": "Blog Managment",
+      "description": "This is a simple blog managment app. It allows you to create, edit and delete posts. It uses React, Redux, and {JSON} Placeholder fake endpoint.",
+      "imgName": "blog.png",
+      "live": "https://blogment.vercel.app/",
+      "source": "https://github.com/TanisJam/almemy-warm-up"
+    },
+    {
       "title": "Trivia",
       "description": "As part of the Evuca project we were assigned the task of creating a website in which to apply the knowledge acquired so far. This results in a strengthen our use of HTML, CSS, and JavaScript. We use Webpack, Git and Less on this proyect. It is a simple trivia game with achievements.",
       "imgName": "trivia.png",
       "live": "https://trivia15dias.vercel.app/",
       "source": "https://github.com/TanisJam/trivia15dias"
+    },
+    {
+      "title": "Hero NFT",
+      "description": "Landing page for NFT transactions. This was created to train the use of NextJs and Sass. ",
+      "imgName": "nft.png",
+      "live": "https://hero-nft.vercel.app/",
+      "source": "https://github.com/TanisJam/hero-page-nft"
     },
     {
       "title": "Its Raining",

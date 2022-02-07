@@ -10,8 +10,16 @@ export default function Work() {
     "Express",
     "JQuery",
     "ReactJS",
+    "NextJS",
+    "Redux",
+    "RESTFul",
     "Bootstrap",
+    "SQL - NoSQL",
+    "Jest - RTL",
+    "Styled-Components",
     "Less",
+    "Jira",
+    "Scrum",
     "Tailwindcss",
     "Git",
     "Linux",
@@ -28,7 +36,7 @@ export default function Work() {
         </p>
         <div className="technologys">
           {technologys.map((t) => (
-            <Technology key={t} >{t}</Technology>
+            <Technology key={t}>{t}</Technology>
           ))}
         </div>
       </SecctionWork>
