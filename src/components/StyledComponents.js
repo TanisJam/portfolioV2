@@ -14,10 +14,10 @@ export const StyledNavLink = styled.a`
   font-weight: 800;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  color: var(--dark);
+  color: var(--light);
   &:hover {
     cursor: pointer;
-    color: black;
+    color: white;
     text-decoration: underline var(--primary) 3px;
     text-underline-offset: 0.2rem;
   }
@@ -58,6 +58,9 @@ export const Modal = styled.div`
     align-items: center;
     justify-content: center;
     gap: min(2.5rem, 2vh);
+    h2 {
+      color: var(--dark);
+    }
     .form-group {
       width: 100%;
     }
@@ -109,12 +112,16 @@ export const Hero = styled.div`
   align-items: center;
   justify-content: center;
   padding: 5rem 1rem;
+
+  max-width: 60rem;
+  margin: 2rem auto;
 `;
 export const HeroImage = styled.img`
   height: 13rem;
   background-color: var(--dark);
   width: auto;
   border-radius: 100%;
+  box-shadow: 0px 0px 2px 1px black;
 `;
 export const HeroContent = styled.div`
   width: clamp(5rem, 90vw, 20rem);
@@ -167,7 +174,20 @@ export const BtnPrimary = styled.a`
 
 //MY WORK
 export const Secction = styled.div`
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .blur{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(2px);
+    max-width: 60rem;
+  }
 `;
 export const SecctionWork = styled.div`
   margin: auto;

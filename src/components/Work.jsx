@@ -27,6 +27,7 @@ export default function Work() {
   ];
   return (
     <Secction id="work">
+      <div className="blur"></div>
       <SecctionWork>
         <h3>My work</h3>
         <p>

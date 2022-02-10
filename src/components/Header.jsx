@@ -4,7 +4,7 @@ import { Hero, HeroContent, HeroImage, BtnPrimary } from "./StyledComponents";
 
 export default function Header() {
   return (
-    <div>
+    
       <Hero>
         <HeroImage src={imgProfile} />
         <HeroContent>
@@ -21,6 +21,6 @@ export default function Header() {
           </BtnPrimary>
         </HeroContent>
       </Hero>
-    </div>
+   
   );
 }
