@@ -156,6 +156,19 @@ export const HeroContent = styled.div`
     -webkit-text-fill-color: transparent;
     animation: bg-move 10s ease-in-out infinite;
   }
+  .contact {
+    width: 4rem;
+    display: flex;
+    justify-content: space-between;
+    svg {
+      color: var(--light);
+      height: 1rem;
+      width: auto;
+      &:hover {
+        color: var(--secondary);
+      }
+    }
+  }
 `;
 export const BtnPrimary = styled.a`
   text-decoration: none;
